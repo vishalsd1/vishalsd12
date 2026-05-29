@@ -98,6 +98,14 @@ export const projects = [
 
 export const experience = [
   {
+    role: "Software Developer Intern",
+    company: "ipshipment pvt ltd",
+    period: "10 Mar 2026 — Present",
+    points: [
+      "Working as a software developer intern, contributing to the development of software solutions.",
+    ],
+  },
+  {
     role: "AI & Cloud Intern",
     company: "EDUNET Foundation",
     period: "Dec 2023 — Jan 2024",
