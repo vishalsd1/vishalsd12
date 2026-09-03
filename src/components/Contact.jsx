@@ -4,14 +4,13 @@ function Contact() {
   return (
     <section id="contact" className="section">
       <div className="section__head">
-        <span className="section__kicker">05 — Contact</span>
-        <h2 className="section__title">Let’s build something</h2>
+        <span className="section__tag">GET IN TOUCH</span>
+        <h2 className="section__title">Let's Connect</h2>
       </div>
 
       <div className="contact">
         <p className="contact__lead">
-          Got an opportunity, a project idea, or just want to say hi? My inbox
-          is open.
+          Whether you have a job opportunity, a project to collaborate on, or just want to discuss tech — feel free to reach out.
         </p>
 
         <div className="contact__grid">
@@ -30,7 +29,7 @@ function Contact() {
         </div>
 
         <a className="btn btn--primary contact__cta" href={`mailto:${profile.email}`}>
-          Say Hello →
+          Send an Email →
         </a>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import Logo from "./Logo";
 import { profile } from "../data/portfolio";
 
 function Footer() {
@@ -5,11 +6,10 @@ function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__brand">
-          <span className="footer__mark">VD</span>
-          <span>{profile.shortName}</span>
+          <Logo size={28} showText={true} />
         </div>
         <div className="footer__copy">
-          © {new Date().getFullYear()} {profile.shortName}. Built with React + Vite.
+          © {new Date().getFullYear()} {profile.shortName}. All rights reserved.
         </div>
       </div>
     </footer>

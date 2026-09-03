@@ -1,11 +1,11 @@
-import { education } from "../data/portfolio";
+import { profile } from "../data/portfolio";
 
 function About() {
   return (
     <section id="about" className="section">
       <div className="section__head">
-        <span className="section__kicker">01 — About</span>
-        <h2 className="section__title">A quick intro</h2>
+        <span className="section__tag">ABOUT ME</span>
+        <h2 className="section__title">Background & What I Do</h2>
       </div>
 
       <div className="about">
@@ -17,30 +17,28 @@ function About() {
             alt="Vishal Dhangare"
             loading="lazy"
           />
-          <div className="about__photo-ring" aria-hidden="true" />
-          <div className="about__photo-badge">
-            <span>Open to work</span>
-          </div>
         </div>
 
         <div className="about__copy">
           <p>
-            I’m a final-year Computer Science Engineering student who likes
-            shipping things end-to-end — from soldering an Arduino board to
-            wiring up the React dashboard that reads from it. I’m happiest at
-            the intersection of hardware, web, and clean UX.
+            I’m a final-year Computer Science Engineering student passionate about
+            building systems end-to-end — from designing hardware circuits on Arduino
+            to creating responsive React web applications that control and monitor them.
           </p>
           <p>
-            Lately I’ve been working with React, React Native, Java/JDBC, and
-            cloud platforms. I’m looking for opportunities where I can keep
-            learning, write maintainable code, and ship features that real
-            users actually feel.
+            My core focus is full-stack web development and IoT architectures. I specialize
+            in React, modern JavaScript, Java, backend APIs, and connected sensor systems.
+            I care about clean code, intuitive user experiences, and solving real-world problems.
+          </p>
+          <p>
+            When I'm not coding, I participate in technical hackathons, explore emerging cloud
+            technologies, and build functional open-source prototypes.
           </p>
 
           <div className="about__stats">
             <div className="stat">
               <span className="stat__num">4+</span>
-              <span className="stat__label">Projects shipped</span>
+              <span className="stat__label">Projects Shipped</span>
             </div>
             <div className="stat">
               <span className="stat__num">7</span>
@@ -48,26 +46,9 @@ function About() {
             </div>
             <div className="stat">
               <span className="stat__num">1st</span>
-              <span className="stat__label">Hackathon podium</span>
+              <span className="stat__label">Hackathon Winner</span>
             </div>
           </div>
-        </div>
-
-        <div className="about__edu">
-          <h3 className="about__edu-title">Education</h3>
-          <ol className="timeline">
-            {education.map((e) => (
-              <li key={e.school} className="timeline__item">
-                <div className="timeline__dot" />
-                <div className="timeline__body">
-                  <div className="timeline__period">{e.period}</div>
-                  <div className="timeline__school">{e.school}</div>
-                  <div className="timeline__degree">{e.degree}</div>
-                  {e.score && <div className="timeline__score">{e.score}</div>}
-                </div>
-              </li>
-            ))}
-          </ol>
         </div>
       </div>
     </section>

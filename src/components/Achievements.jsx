@@ -4,8 +4,8 @@ function Achievements() {
   return (
     <section id="achievements" className="section">
       <div className="section__head">
-        <span className="section__kicker">🏆 Achievements</span>
-        <h2 className="section__title">Recognition & awards</h2>
+        <span className="section__tag">RECOGNITION</span>
+        <h2 className="section__title">Achievements & Awards</h2>
       </div>
 
       <div className="achievements">
@@ -20,7 +20,6 @@ function Achievements() {
               <h3 className="achievement__title">{achievement.title}</h3>
               <p className="achievement__detail">{achievement.detail}</p>
             </div>
-            <div className="achievement__accent" />
           </div>
         ))}
       </div>

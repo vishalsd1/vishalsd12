@@ -4,25 +4,31 @@ function Education() {
   return (
     <section id="education" className="section section--light">
       <div className="section__head">
-        <span className="section__kicker">📚 Education</span>
-        <h2 className="section__title">Learning journey</h2>
+        <span className="section__tag">EDUCATION</span>
+        <h2 className="section__title">Academic Background</h2>
       </div>
 
-      <div className="education">
-        {education.map((edu, index) => (
-          <div className="edu-card" key={edu.school}>
-            <div className="edu-card__timeline">
-              <div className="edu-card__dot" />
-              {index !== education.length - 1 && <div className="edu-card__line" />}
-            </div>
-            <div className="edu-card__content">
-              <div className="edu-card__header">
-                <h3 className="edu-card__school">{edu.school}</h3>
-                <span className="edu-card__period">{edu.period}</span>
+      <div className="education-grid">
+        {education.map((edu) => (
+          <div className="edu-card-clean" key={edu.school}>
+            <div className="edu-card-clean__top">
+              <div className="edu-card-clean__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
               </div>
-              <p className="edu-card__degree">{edu.degree}</p>
-              {edu.score && <p className="edu-card__score">Score: {edu.score}</p>}
+              <div className="edu-card-clean__header">
+                <h3 className="edu-card-clean__degree">{edu.degree}</h3>
+                <p className="edu-card-clean__school">{edu.school}</p>
+              </div>
+              <span className="edu-card-clean__period">{edu.period}</span>
             </div>
+            {edu.score && (
+              <div className="edu-card-clean__footer">
+                <span className="edu-card-clean__score">Score / Grade: <strong>{edu.score}</strong></span>
+              </div>
+            )}
           </div>
         ))}
       </div>
